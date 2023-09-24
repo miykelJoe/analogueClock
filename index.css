@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+body .clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  padding: 1em;
+}
+body .clock-container .clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid;
+  width: 50em;
+  height: 50em;
+  position: relative;
+}
+body .clock-container .clock .clock-hand {
+  position: absolute;
+  width: 0.2em;
+}
+body .clock-container .clock .second-hand {
+  height: 90%;
+  rotate: 0deg;
+  z-index: 2;
+  background: linear-gradient(rgb(0, 0, 0) 40%, transparent 60%);
+}
+body .clock-container .clock .minute-hand {
+  height: 70%;
+  rotate: 0deg;
+  z-index: 1;
+  background: linear-gradient(rgb(41, 45, 242) 40%, transparent 60%);
+}
+body .clock-container .clock .hour-hand {
+  height: 50%;
+  rotate: 0deg;
+  background: linear-gradient(rgb(245, 6, 6) 40%, transparent 60%);
+}
+body .clock-container .clock .x-axis {
+  width: 100%;
+  position: absolute;
+}
+body .clock-container .clock .y-axis {
+  border: 1px solid;
+  height: 100%;
+  position: absolute;
+}
+body .clock-container .clock .y-axis:nth-child(2) {
+  rotate: 30deg;
+}
+body .clock-container .clock .y-axis:nth-child(3) {
+  rotate: 60deg;
+}
+body .clock-container .clock .y-axis:nth-child(4) {
+  rotate: 120deg;
+}
+body .clock-container .clock .y-axis:nth-child(5) {
+  rotate: 150deg;
+}
+body .clock-container .clock .clock_border {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid red;
+  width: 100%;
+  max-width: 48em;
+  height: 48em;
+  position: relative;
+}
+body .clock-container .clock .clock_border .number {
+  font-size: 3rem;
+  position: absolute;
+  transform-origin: 50% 100%;
+}
+body .clock-container .clock .clock_border .number:nth-child(1) {
+  transform: translate(0em, -6.7em);
+}
+body .clock-container .clock .clock_border .number:nth-child(2) {
+  transform: translate(3.35em, -5.79em);
+}
+body .clock-container .clock .clock_border .number:nth-child(3) {
+  transform: translate(5.8em, -3.3em);
+}
+body .clock-container .clock .clock_border .number:nth-child(4) {
+  transform: translate(6.7em, 0em);
+}
+body .clock-container .clock .clock_border .number:nth-child(5) {
+  transform: translate(5.8em, 3.3em);
+}
+body .clock-container .clock .clock_border .number:nth-child(6) {
+  transform: translate(3.35em, 5.79em);
+}
+body .clock-container .clock .clock_border .number:nth-child(7) {
+  transform: translate(0em, 6.7em);
+}
+body .clock-container .clock .clock_border .number:nth-child(8) {
+  transform: translate(-3.35em, 5.79em);
+}
+body .clock-container .clock .clock_border .number:nth-child(9) {
+  transform: translate(-5.8em, 3.3em);
+}
+body .clock-container .clock .clock_border .number:nth-child(10) {
+  transform: translate(-6.7em, 0em);
+}
+body .clock-container .clock .clock_border .number:nth-child(11) {
+  transform: translate(-5.8em, -3.3em);
+}
+body .clock-container .clock .clock_border .number:nth-child(12) {
+  transform: translate(-3.35em, -5.79em);
+}/*# sourceMappingURL=index.css.map */
