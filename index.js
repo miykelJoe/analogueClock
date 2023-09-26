@@ -52,6 +52,11 @@ let trial = setInterval(() => {
         if (sumOfMinuteDegree > 360){
             sumOfMinuteDegree = 0
         }
+
+        if (sumOfHourDegree > 359)
+        sumOfHourDegree = 0
+
+        // console.log(sumOfHourDegree)
         return sumOfHourDegree
     }
     
