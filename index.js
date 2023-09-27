@@ -56,7 +56,6 @@ let trial = setInterval(() => {
         if (sumOfHourDegree > 359)
         sumOfHourDegree = 0
 
-        // console.log(sumOfHourDegree)
         return sumOfHourDegree
     }
     
@@ -66,12 +65,3 @@ let trial = setInterval(() => {
     hourHand.style.rotate = hours
     
 }, 1000)
-
-    // setInterval(function () {
-    //     const date = new Date()
-    //     const sec = date.getSeconds()
-    //     const min = date.getMinutes()
-    //     const hr = date.getHours()
-    //     // console.clear()
-    //     // console.log('Your Time is ', `${hr} : ${min} : ${sec}`)
-    // }, 1000)
